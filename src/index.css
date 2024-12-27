@@ -1,0 +1,27 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .desktop-menu {
+        display: flex !important;
+    }
+
+    .mobile-menu-button {
+        display: none !important;
+    }
+
+    .expcards {
+        width: '100%' !important;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .timeline-card {
+        width: 100% !important;
+    }
+}
