@@ -14,7 +14,7 @@ const InicioSection = () => (
                 <Flex justify="center" gap="middle">
                     <Button icon={<GithubOutlined />} size="large" href="https://github.com/jurad0" target="_blank"></Button>
                     <Button icon={<LinkedinOutlined />} size="large" href="https://www.linkedin.com/in/antonio-jurado-miranda/" target="_blank"></Button>
-                    <Button icon={<DownloadOutlined />} size="large" href="src/cvs/cvdev.pdf" download="AntonioJurado_CV.pdf">Descargar CV</Button>
+                    <Button icon={<DownloadOutlined />} size="large" href="src/cvs/cvdev.pdf" download="AntonioJurado_CV.pdf">Download CV</Button>
                 </Flex>
             </Col>
         </Row>

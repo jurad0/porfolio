@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Typography, Timeline, Card, Col, Divider } from 'antd';
+import { Row, Typography, Col, } from 'antd';
 import { FaJava, FaPython, FaPhp, FaReact, FaGit } from 'react-icons/fa';
 import { SiJavascript, SiHtml5, SiCss3, SiDjango, SiSpringboot, SiMysql, SiMongodb } from 'react-icons/si';
 import { VscAzure } from "react-icons/vsc";
@@ -22,57 +22,19 @@ const HabilidadesSection = () => {
     ];
 
     return (
-        <section id="habilidades">
+        <section id="skills" style={{ paddingTop: 100 }}>
             <Row justify="center">
-                <Typography.Title level={2}>Habilidades</Typography.Title>
+                <Typography.Title level={2}>Skills</Typography.Title>
             </Row>
             <Row justify="center" gutter={[16, 16]} style={{ marginTop: 20 }}>
                 {skills.map((skill, index) => (
-                    <Col key={index} xs={8} sm={6} md={4} lg={3} style={{ textAlign: 'center' }}>
+                    <Col key={index} xs={8} sm={6} md={4} lg={3} style={{ textAlign: 'center' }} >
                         <div style={{ fontSize: 32, color: skill.color }}>{skill.icon}</div>
                         <Typography.Text>{skill.label}</Typography.Text>
                     </Col>
                 ))}
             </Row>
-            <Row justify="center">
-                <Typography.Title level={2}>Experiencia</Typography.Title>
-            </Row>
-            <Row justify="center" style={{ marginTop: 20 }}>
-                <Timeline mode="alternate" className='expcards' style={{ width: '50%' }}>
-                    <Timeline.Item>
-                        <Card className='timeline-card' bordered={false} style={{ marginBottom: 20 }} hoverable>
-                            <Typography.Title level={5}>Sistemas Microinformaticos y Redes</Typography.Title>
-                            <Divider />
-                            <Typography.Text strong>2019 - 2022</Typography.Text>
 
-                        </Card>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <Card bordered={false} style={{ marginBottom: 20 }} hoverable>
-                            <Typography.Title level={5}>JDZ Informática</Typography.Title>
-                            <Divider />
-                            <Typography.Text strong> Mar 2022 - Jun 2022</Typography.Text>
-
-                        </Card>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <Card bordered={false} style={{ marginBottom: 20 }} hoverable>
-                            <Typography.Title level={5}>Web Aplication Development</Typography.Title>
-                            <Divider />
-                            <Typography.Text strong>2022- 2024</Typography.Text>
-
-                        </Card>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <Card bordered={false} style={{ marginBottom: 20 }} hoverable>
-                            <Typography.Title level={5}>SOLUM</Typography.Title>
-                            <Divider />
-                            <Typography.Text strong>Mar 2024 - Jun 2024</Typography.Text>
-
-                        </Card>
-                    </Timeline.Item>
-                </Timeline>
-            </Row>
         </section>
     );
 };

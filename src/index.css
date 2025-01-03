@@ -4,7 +4,76 @@
     margin: 0px;
 }
 
-/* Estilos para pantallas grandes */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4CAF50;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Estilo del contenedor */
+section:hover h2::after {
+    width: 80%;
+
+}
+
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    color: #001529;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+    cursor: pointer;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #001529;
+    margin: 0.5rem auto 0;
+    transition: width 0.3s ease;
+}
+
+
+section:hover h2::after {
+    width: 80%;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 @media (min-width: 768px) {
     .desktop-menu {
         display: flex !important;
@@ -14,14 +83,25 @@
         display: none !important;
     }
 
-    .expcards {
-        width: '100%' !important;
-    }
+
 }
 
-/* Estilos para pantallas pequeñas */
 @media (max-width: 767px) {
-    .timeline-card {
+    .expcards {
         width: 100% !important;
+
+
     }
+
+
+
+    .ant-card-body {
+        padding: 30px;
+        /* Más espacio en móviles */
+        margin: 20px 0;
+        /* Más separación entre cards */
+    }
+
+
+
 }

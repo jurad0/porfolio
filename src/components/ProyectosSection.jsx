@@ -20,9 +20,9 @@ const ProyectosSection = () => {
     };
 
     return (
-        <section id="proyectos">
+        <section id="proyectos" style={{ paddingTop: 100 }}>
             <Row justify="center">
-                <Typography.Title level={2}>Proyectos</Typography.Title>
+                <Typography.Title level={2}>Proyects</Typography.Title>
             </Row>
             <Row justify="center">
                 <Card
@@ -30,7 +30,7 @@ const ProyectosSection = () => {
                     hoverable
                     cover={<img alt="example" src="src/images/whatever.png" />}
                     actions={[]}
-                    onClick={showModal} // Muestra el modal al hacer clic
+                    onClick={showModal}
                 >
                     <Meta
                         title="WhatEver"
@@ -39,7 +39,7 @@ const ProyectosSection = () => {
                 </Card>
             </Row>
 
-            {/* Modal para mostrar detalles del proyecto */}
+
             <Modal
                 open={isModalOpen}
                 onOk={handleOk}
