@@ -5,9 +5,7 @@ import { LinkedinOutlined, GithubOutlined, MailOutlined } from '@ant-design/icon
 const ContactoSection = () => {
     const email = "antoniojuradomiranda@gmail.com";
 
-    const handleCopyToClipboard = () => {
-        navigator.clipboard.writeText(email);
-    };
+
 
     return (
 

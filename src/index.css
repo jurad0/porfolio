@@ -16,10 +16,16 @@ h1 {
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Estilo del contenedor */
-section:hover h2::after {
-    width: 80%;
 
+.profileImage {
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6));
+    mask-image: linear-gradient(black 60%, transparent);
+
+    /* Estilo del contenedor */
+    section:hover h2::after {
+        width: 80%;
+
+    }
 }
 
 
